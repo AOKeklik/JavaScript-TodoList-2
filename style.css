@@ -1,0 +1,141 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+body{
+    min-height:100vh;
+    background-image:linear-gradient(120deg,#e2c35d,#d88771);
+    font-family:'Poppins', sans-serif;
+    color:white;
+}
+header{
+    font-size:1.5rem;
+}
+header, 
+form{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:20vh;
+}
+form input,
+form button{
+    padding:0.5rem;
+    font-size:2rem;
+    border:none;
+    background-color:white;
+}
+form button{
+    transition:all 0.3s ease;
+    cursor:pointer;
+    background-color:white;
+    color:#d88771;
+}
+form button:hover{
+    background-color:#d88771;
+    color:white;
+}
+
+/**/
+.todo-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.todo-list{
+    min-width:40.5%;
+    list-style:none;
+}
+.todo{
+    transition:all 0.5s ease;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:0.5rem;
+    background-color:white;
+    font-size:1.5rem;
+    color:black;
+}
+.todo li{
+    flex:1;
+}
+.trash-btn,
+.complete-btn{
+    cursor:pointer;
+    padding:1rem;
+    border:none;
+    background-color:#ff6f47d7;
+    font-size:1rem;
+    color:white;
+}
+.complete-btn{
+    background-color:lightgreen;
+}
+.todo-item{
+    padding:0rem 0.5rem;
+}
+.fa-trash,
+.fa-check{
+    pointer-events:none;
+}
+.completed{
+    text-decoration:line-through;
+    opacity:0.5;
+}
+.fall{
+    transform:translateY(8rem) rotateZ(20deg);
+    opacity:0;
+}
+/**/
+select{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    outline:none;
+    border:none;
+}
+.select{
+    position:relative;
+    overflow:hidden;
+    margin:1rem;     
+}
+select{
+    cursor:pointer;
+    width:10rem;
+    padding:1rem;
+    color:#ff6f47;
+}
+.select::after{
+    content:"\25BC";
+    pointer-events:none;
+    position:absolute;
+    top:0;
+    right:0;
+    padding:1rem;
+    background-color:#ff6f47;
+    transition:all 0.3s ease;
+}
+.select:hover::after{
+    background-color:white;
+    color:#ff6f47;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
